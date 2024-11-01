@@ -13,7 +13,8 @@
 * Simplified Workflow: Streamline your interaction with AI models by eliminating the complexities of web server setup and management.
 * Enhanced User Experience: Enjoy a responsive and interactive experience with real-time feedback and clear, formatted output.
 * Increased Efficiency: Focus on your tasks without the overhead of managing separate web interfaces or servers.
-![fluxmini](https://github.com/user-attachments/assets/3a4d2b2e-051c-47d2-9b4e-8dff9e526c1e)
+
+![fluxui](https://github.com/user-attachments/assets/4218babb-688e-4804-b0d1-a5ec70f5e303)
 
 
 ## Installation
@@ -68,4 +69,4 @@ ollama run gemma2:2b
  
 11. Run `C:\FluxUI\FluxUI.py` and the FluxUI will start
 
-
+![fluxmini](https://github.com/user-attachments/assets/3a4d2b2e-051c-47d2-9b4e-8dff9e526c1e)
