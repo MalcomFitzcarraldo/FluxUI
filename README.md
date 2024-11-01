@@ -22,7 +22,7 @@
 1. Download and extract FluxUI, and Create the FluxUI directory.
 > [!IMPORTANT]
 > Without modification, this must to be installed/run from "C:\FluxUI".
-3. right-click in the **extracted folder** and click "Open in Terminal".
+3. right-click in the **extracted folder** containing the 6 files and click "Open in Terminal".
 4. Run the following commands to create the directory and install FluxUI.
 * Create directory - C:\FluxUI.
    ```cmd
