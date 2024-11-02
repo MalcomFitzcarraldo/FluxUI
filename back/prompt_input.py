@@ -10,9 +10,6 @@ with open(file2_path, 'r') as file2:
     file2_content = file2.read()
 with open(output_file_path, 'w') as output_file:
     output_file.write(file1_content + "\n" + file2_content)
-
-print(Back.BLUE)
-print(Style.BRIGHT)
 print(Fore.WHITE + "Ollama Activated. - Opening in Browser.")
 print(Style.RESET_ALL)
 
