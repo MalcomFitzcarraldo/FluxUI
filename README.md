@@ -33,17 +33,6 @@
    ```cmd
    xcopy . "C:\FluxUI\" /E /H /C /I
    ```
-* Create desktop shortcut (optional)
-  Run the following code in cmd **(as admin)** to create a desktop shortcut: 
-- Windows (Standard)
-```cmd
-cmd /k mklink "C:\Users\%USERNAME%\Desktop\Snap2It.lnk" "C:\FluxUI\FluxUI.py"
-```
-- Windows (OneDrive)
-```cmd
-cmd /k mklink "C:\Users\%USERNAME%\OneDrive\Desktop\Snap2It.lnk" "C:\FluxUI\FluxUI.py"
-```
-or Navigate to **C:\FluxUI** and open FluxUI.py
    
 4. Install Python (with PIP) - https://www.python.org/downloads/
    - Once installed, confirm that you have installed by typing `pip --version` in the Command Prompt.
@@ -78,6 +67,21 @@ ollama run gemma2:2b
    - Default prompt is: Find the question in the text below and give a simple answer:
    - Default ollama server address: localhost:11434
  
-11. Run `C:\FluxUI\FluxUI.py` and the FluxUI will start
+11. Create desktop shortcut (optional)
+  Run the following code in cmd **(as admin)** to create a desktop shortcut: 
+- Windows (Standard)
+```cmd
+cmd /k mklink "C:\Users\%USERNAME%\Desktop\Snap2It.lnk" "C:\FluxUI\FluxUI.py"
+```
+- Windows (OneDrive)
+```cmd
+cmd /k mklink "C:\Users\%USERNAME%\OneDrive\Desktop\Snap2It.lnk" "C:\FluxUI\FluxUI.py"
+```
+or Navigate to **C:\FluxUI** and open **FluxUI.py**
+
+## Advanced Setup
+
+### Running Ollama from another PC
+Open ``C:\FluxUI\back\API_ollama`` line 18: Replace ``localhost`` with the IP of the PC running Ollama
 
 ![fluxmini](https://github.com/user-attachments/assets/3a4d2b2e-051c-47d2-9b4e-8dff9e526c1e)
