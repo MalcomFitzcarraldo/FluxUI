@@ -41,4 +41,5 @@ time.sleep(2)
 subprocess.Popen(['cmd', '/c', 'start', 'python', 'C:/FluxUI/back/getrich_final.py'])
 subprocess.Popen(['cmd', '/c', 'start', 'python', 'C:/FluxUI/back/finished.py'])
 print(Fore.GREEN + "\nResponse cached to temp/output.txt")
+time.sleep(1)
 
