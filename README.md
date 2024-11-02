@@ -33,6 +33,17 @@
    ```cmd
    xcopy . "C:\FluxUI\" /E /H /C /I
    ```
+* Create desktop shortcut (optional)
+  Run the following code in cmd **(as admin)** to create a desktop shortcut: 
+- Windows (Standard)
+```cmd
+cmd /k mklink "C:\Users\%USERNAME%\Desktop\Snap2It.lnk" "C:\FluxUI\FluxUI.py"
+```
+- Windows (OneDrive)
+```cmd
+cmd /k mklink "C:\Users\%USERNAME%\OneDrive\Desktop\Snap2It.lnk" "C:\FluxUI\FluxUI.py"
+```
+or Navigate to **C:\FluxUI** and open FluxUI.py
    
 4. Install Python (with PIP) - https://www.python.org/downloads/
    - Once installed, confirm that you have installed by typing `pip --version` in the Command Prompt.
