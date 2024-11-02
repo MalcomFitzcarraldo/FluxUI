@@ -30,15 +30,18 @@ style.string = '''
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    background-color: #000000;
+    color: #ffffff;
 }
 .content {
     border: 1px solid #ccc;
     padding: 20px;
-    background-color: #D6FFCC;
+    border-color: #02FE37;
+    background-color: #131313;
 }
 code {
     background-color: #C2B496;
-    border: 1px solid #ddd;
+    border: 1px solid #7600FC;
     border-radius: 4px;
     padding: 5px;
 }
