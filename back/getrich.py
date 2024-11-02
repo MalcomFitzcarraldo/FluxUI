@@ -41,15 +41,19 @@ style.string = '''
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    background-color: #474545;
+    color: #ffffff;
 }
 .content {
-    border: 1px solid #ccc;
+    border: 4px dotted #ccc;
     padding: 20px;
-    background-color: #f9f9f9;
+    border-color: #FE9900;
+    background-color: #131313;
+    color: #ffffff;
 }
 code {
     background-color: #f8f8f8;
-    border: 1px solid #ddd;
+    border: 1px solid #7600FC;
     border-radius: 4px;
     padding: 5px;
 }
