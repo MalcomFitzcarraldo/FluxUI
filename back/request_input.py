@@ -1,6 +1,7 @@
-from colorama import Fore, Style
+from colorama import Fore, Style, Back
 import subprocess
-print(Fore.GREEN + "FluxUI" + Style.RESET_ALL)
+
+print(Fore.WHITE + Style.BRIGHT + Back.BLUE + "FluxUI" + Style.RESET_ALL)
 print(Fore.GREEN + "" + Style.RESET_ALL)
 print(Style.BRIGHT)
 def save_text():
@@ -12,7 +13,7 @@ def save_text():
   try:
     with open("C:\\FluxUI\\temp\\input.txt", "w") as file:
       file.write(user_input)
-    print(Fore.CYAN + "Text saved successfully!" + Style.RESET_ALL)
+    print(Fore.GREEN + "Text sent! Launching response..." + Style.RESET_ALL)
     subprocess.run(["python", "C:/FluxUI/back/prompt_input.py"])
   except Exception as e:
     print(Fore.RED + f"An error occurred: {e}" + Style.RESET_ALL)
