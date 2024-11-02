@@ -9,4 +9,4 @@ copy /Y "%source%\output.txt" "%destination%\output.txt"
 copy /Y "%source%\prompt_input.txt" "%destination%\prompt_input.txt"
 copy /Y "%source%\response.txt" "%destination%\response.txt"
 
-echo UI Clear!
+echo Cache Cleared!
