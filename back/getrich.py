@@ -1,6 +1,16 @@
 from bs4 import BeautifulSoup
 # BeautifulSoup4
 import markdown
+import random
+import time
+import os
+from colorama import Fore, Back, Style, init
+
+init(autoreset=True)
+colors = [ Fore.BLACK, Fore.RED, Fore.GREEN, Fore.YELLOW, Fore.BLUE, Fore.MAGENTA, Fore.CYAN, Fore.WHITE, Back.BLACK, Back.RED, Back.GREEN, Back.YELLOW, Back.BLUE, Back.MAGENTA, Back.CYAN, Back.WHITE
+]
+def get_random_color():
+    return random.choice(colors)
 
 # Read the content of the Markdown file
 input_file_path = r'C:\FluxUI\temp\output.txt'
@@ -23,7 +33,7 @@ html_doc = BeautifulSoup("<html><head></head><body></body></html>", 'html.parser
 html_doc.head.append(html_doc.new_tag('title', string='FluxUI'))
 
 # Add meta tag for page refresh
-meta = html_doc.new_tag('meta', **{'http-equiv': 'refresh', 'content': '5'})
+meta = html_doc.new_tag('meta', **{'http-equiv': 'refresh', 'content': '2'})
 html_doc.head.append(meta)
 
 style = html_doc.new_tag('style')
@@ -70,6 +80,12 @@ body.append(div)
 output_file_path = r'C:\FluxUI\temp\output.html'
 with open(output_file_path, 'w', encoding='utf-8') as file:
     file.write(str(html_doc.prettify()))
-
-print(f"HTML file created at {output_file_path}")
+os.system('cls')
+print(Fore.WHITE + Style.BRIGHT + Back.BLUE + "FluxUI" + Style.RESET_ALL)
+print(Fore.GREEN + "")
+print(Fore.GREEN + "HTML Updated!")
+print(Fore.GREEN + "")
+for i in range(3):
+    random_color = get_random_color()
+    print(random_color + f"Cached at {output_file_path}")
 
