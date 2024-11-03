@@ -54,15 +54,15 @@ body {
 code {
     background-color: #131313;
     border: 1px solid #FED50B;
-    border-radius: 4px;
+    border-radius: 1px;
     padding: 5px;
 }
 pre code {
     display: block;
-    padding: 10px;
+    padding: 1px;
     overflow: auto;
     background: #131313;
-    border-radius: 3px;
+    border-radius: 1px;
 }
 '''
 html_doc.head.append(style)
