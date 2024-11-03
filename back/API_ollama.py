@@ -23,10 +23,6 @@ response_stream = client.chat(model='gemma2:9b', messages=[{
 
 # Open the output
 with open(output_file_path, 'w') as output_file:
-    # Start the scheduler
-    subprocess.run([r'C:/FluxUI/back/signal_reset.bat'])
-    subprocess.Popen(['cmd', '/c', 'start', 'python', 'C:/FluxUI/back/update_timer.py'])
-    
     for chunk in response_stream:
         # Print the chunk to the console
         # print(chunk['message']['content'], end='')
@@ -37,7 +33,7 @@ with open(output_file_path, 'w') as output_file:
 
 # Create a signal file to indicate the script has finished 
 with open(signal_file_path, 'w') as signal_file: signal_file.write('done')
-time.sleep(2)
+time.sleep(3)
 subprocess.Popen(['cmd', '/c', 'start', 'python', 'C:/FluxUI/back/getrich_final.py'])
 subprocess.Popen(['cmd', '/c', 'start', 'python', 'C:/FluxUI/back/finished.py'])
 print(Fore.GREEN + "\nResponse cached to temp/output.txt")
