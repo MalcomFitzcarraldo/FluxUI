@@ -14,7 +14,8 @@
 * Enhanced User Experience: Enjoy a responsive and interactive experience with real-time feedback and clear, formatted output.
 * Increased Efficiency: Focus on your tasks without the overhead of managing separate web interfaces or servers.
 
-![fluxui](https://github.com/user-attachments/assets/aff6a1bc-ff90-4898-b908-1978d66fa480)
+![fluxui](https://github.com/user-attachments/assets/9128feed-52ae-4f67-adb8-7c1636cddda1)
+
 
 
 ## Installation
