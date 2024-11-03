@@ -34,14 +34,14 @@ body {
     color: #ffffff;
 }
 .content {
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     padding: 20px;
     border-color: #02FE37;
     background-color: #131313;
 }
 code {
-    background-color: #C2B496;
-    border: 1px solid #7600FC;
+    background-color: #131313;
+    border: 1px solid #FED50B;
     border-radius: 4px;
     padding: 5px;
 }
@@ -49,7 +49,7 @@ pre code {
     display: block;
     padding: 10px;
     overflow: auto;
-    background: #90908F;
+    background: #131313;
     border-radius: 3px;
 }
 '''
