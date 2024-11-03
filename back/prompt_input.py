@@ -1,6 +1,7 @@
 from colorama import Fore, Style, Back
 import subprocess
 import webbrowser
+import time
 file1_path = r'C:\FluxUI\ai_prompt.txt'
 file2_path = r'C:\FluxUI\temp\input.txt'
 output_file_path = r'C:\FluxUI\temp\prompt_input.txt'
@@ -13,6 +14,11 @@ with open(output_file_path, 'w') as output_file:
 print(Fore.WHITE + "Ollama Activated. - Opening in Browser.")
 print(Style.RESET_ALL)
 
+# Start the scheduler
+subprocess.run([r'C:/FluxUI/back/signal_reset.bat'])
+time.sleep(1)
+subprocess.Popen(['cmd', '/c', 'start', 'python', 'C:/FluxUI/back/update_timer.py'])
+time.sleep(1)
 url = "C:/FluxUI/temp/output.html"
 webbrowser.open(url)
 
