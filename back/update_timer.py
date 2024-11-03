@@ -10,7 +10,7 @@ def run_merger():
             print("Main script finished. Exiting scheduler.")
             break
         subprocess.run(['python', 'C:/FluxUI/back/getrich.py'])
-        time.sleep(2)
+        time.sleep(2.5)
 
 if __name__ == "__main__":
     run_merger()
