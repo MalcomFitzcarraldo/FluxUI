@@ -45,15 +45,15 @@ body {
     color: #ffffff;
 }
 .content {
-    border: 4px dotted #ccc;
+    border: 5px dotted #ccc;
     padding: 20px;
     border-color: #FE9900;
     background-color: #131313;
     color: #ffffff;
 }
 code {
-    background-color: #f8f8f8;
-    border: 1px solid #7600FC;
+    background-color: #131313;
+    border: 1px solid #FED50B;
     border-radius: 4px;
     padding: 5px;
 }
@@ -61,7 +61,7 @@ pre code {
     display: block;
     padding: 10px;
     overflow: auto;
-    background: #f5f2f0;
+    background: #131313;
     border-radius: 3px;
 }
 '''
