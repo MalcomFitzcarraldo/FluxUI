@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FluxUI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+        }
+    </style>
+    <script>
+        function copyToClipboard() {
+            const textarea = document.getElementById('text-area');
+            const textToCopy = '@flux: ' + textarea.value;
+            
+            // Create a temporary textarea to copy the text
+            const tempTextarea = document.createElement('textarea');
+            tempTextarea.value = textToCopy;
+            document.body.appendChild(tempTextarea);
+            tempTextarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextarea);
+
+            window.location.href = 'C:/FluxUI/temp/output.html'; // Redirect to output.html
+        }
+
+        // Handle Enter key press in the textarea
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const textarea = document.getElementById('text-area');
+            textarea.addEventListener('keydown', function(event) {
+                if (event.key === 'Enter' && event.shiftKey === false) {
+                    event.preventDefault();
+                    copyToClipboard();
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Send message:</h1>
+    <form onsubmit="event.preventDefault(); copyToClipboard();">
+        <textarea id="text-area" placeholder="Type your text here..."></textarea><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
