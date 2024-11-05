@@ -1,6 +1,5 @@
 from colorama import Fore, Style, Back
 import subprocess
-import webbrowser
 import time
 file1_path = r'C:\FluxUI\ai_prompt.txt'
 file2_path = r'C:\FluxUI\temp\input.txt'
@@ -19,7 +18,5 @@ subprocess.run([r'C:/FluxUI/back/signal_reset.bat'])
 time.sleep(1)
 subprocess.Popen(['cmd', '/c', 'start', 'python', 'C:/FluxUI/back/update_timer.py'])
 time.sleep(1)
-url = "C:/FluxUI/temp/output.html"
-webbrowser.open(url)
 
 subprocess.run(["python", "C:/FluxUI/back/API_ollama.py"])
