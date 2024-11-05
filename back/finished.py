@@ -10,5 +10,5 @@ print(Fore.RED + Back.BLACK + Style.BRIGHT + "Press ENTER to CLEAR" + Style.RESE
 print(Fore.YELLOW + Back.RED + Style.BRIGHT + "Press ENTER to CLEAR response and start a new query." + Style.RESET_ALL)
 print(Fore.RED + Back.BLACK + Style.BRIGHT + "Press ENTER to CLEAR" + Style.RESET_ALL)
 input()
-subprocess.run(["python", "C:/snap2it/C:/FluxUI/FluxUI.py"])
+subprocess.run(["python", "C:/FluxUI/FluxUI.py"])
 
