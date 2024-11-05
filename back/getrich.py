@@ -15,7 +15,7 @@ def get_random_color():
 # Read the content of the Markdown file
 input_file_path = r'C:\FluxUI\temp\output.txt'
 try:
-    with open(input_file_path, 'r') as file:
+    with open(input_file_path, 'r', encoding='utf-8') as file:
         markdown_text = file.read()
 except FileNotFoundError:
     print(f"The file at {input_file_path} was not found.")
