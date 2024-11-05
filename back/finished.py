@@ -9,6 +9,5 @@ print(Fore.GREEN + "" + Style.RESET_ALL)
 print(Fore.RED + Back.BLACK + Style.BRIGHT + "Press ENTER to CLEAR" + Style.RESET_ALL)
 print(Fore.YELLOW + Back.RED + Style.BRIGHT + "Press ENTER to CLEAR response and start a new query." + Style.RESET_ALL)
 print(Fore.RED + Back.BLACK + Style.BRIGHT + "Press ENTER to CLEAR" + Style.RESET_ALL)
-input()
+#input()
 subprocess.run(["python", "C:/FluxUI/FluxUI.py"])
-
