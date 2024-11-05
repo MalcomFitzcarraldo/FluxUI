@@ -36,7 +36,7 @@ with open(output_file_path, 'w', encoding='utf-8') as output_file:
 with open(signal_file_path, 'w') as signal_file: signal_file.write('done')
 time.sleep(3)
 subprocess.Popen(['cmd', '/c', 'start', 'python', 'C:/FluxUI/back/getrich_final.py'])
-time.sleep(5)
+time.sleep(3)
 subprocess.run(["python", "C:/FluxUI/back/finished.py"])
 #subprocess.Popen(['cmd', '/c', 'start', 'python', 'C:/FluxUI/back/finished.py'])
 print(Fore.GREEN + "\nResponse cached to temp/output.txt")
