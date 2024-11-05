@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>FluxUI</title>
+    <title>FluxUI Prompt Setup</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -37,12 +37,10 @@
             border: 1px solid #ccc;
             box-sizing: border-box; /* Include padding and border in width/height */
             margin-bottom: 10px;
-            background-color: #131313;
-            color: #ffffff;
         }
 
         button {
-            background-color: #4CAF50;
+            background-color: #FE9900;
             color: white;
             padding: 10px 20px;
             border: none;
@@ -68,24 +66,23 @@
             padding: 10px;
             border-radius: 5px;
         }
-        .footer {
-            background-color: #131313;
-            color: #ffffff;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
+    #myFrame {
+      border: none;
+      width: 500px;
+      height: 300px;
 
     </style>
 </head>
 <body>
-    <h1>FluxUI</h1>
+
+    <h1>SET PROMPT:</h1>
     <form onsubmit="event.preventDefault(); copyToClipboard();">
-        <textarea id="text-area" placeholder="Type your text here..."></textarea><br><br>
-        <button type="submit">Send</button>
+        <textarea id="text-area" placeholder="Type or paste your prompt here..."></textarea><br><br>
+        <button type="submit">UPDATE PROMPT</button>
     </form>
 
     <div class="chat-container">
+
         </div>
 
 
@@ -93,7 +90,7 @@
  <script>
         function copyToClipboard() {
             const textarea = document.getElementById('text-area');
-            const textToCopy = '@flux: ' + textarea.value;
+            const textToCopy = '#flux: ' + textarea.value;
             
             // Create a temporary textarea to copy the text
             const tempTextarea = document.createElement('textarea');
@@ -102,8 +99,8 @@
             tempTextarea.select();
             document.execCommand('copy');
             document.body.removeChild(tempTextarea);
-
-            window.location.href = 'C:/FluxUI/temp/output.html'; // Redirect to output.html
+            alert('Prompt Updated.');
+            window.location.href = 'C:/FluxUI/back/web/input.html'; // Redirect to output.html
         }
 
         // Handle Enter key press in the textarea
@@ -118,14 +115,18 @@
         });
     </script>
 
-<footer>
-  <div class="footer">
-    V 0.9.1 |
-    <button onclick="window.location.href='https://github.com/MalcomFitzcarraldo/FluxUI/blob/main/README.md';">Check for Updates</button> |
-    <button onclick="window.location.href='C:/FluxUI/back/web/model.html';">Change Model</button> |
-    <button onclick="window.location.href='C:/FluxUI/back/web/prompt.html';">Edit Prompt</button> |
 
-  </div>
+<button onclick="openFile()">View Prompt</button>
+
+<iframe id="myFrame" src=""></iframe>
+
+<script>
+function openFile() {
+  const iframe = document.getElementById('myFrame');
+  iframe.src = 'C:\\FluxUI\\ai_prompt.txt'; // Replace with your file path
+}
+</script>
+<footer>
 </footer>
 
 
