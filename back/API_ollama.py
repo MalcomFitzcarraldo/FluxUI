@@ -41,4 +41,3 @@ subprocess.run(["python", "C:/FluxUI/back/finished.py"])
 #subprocess.Popen(['cmd', '/c', 'start', 'python', 'C:/FluxUI/back/finished.py'])
 print(Fore.GREEN + "\nResponse cached to temp/output.txt")
 
-
