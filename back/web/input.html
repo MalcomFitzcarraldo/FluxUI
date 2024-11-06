@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>FluxUI</title>
+    <link rel="icon" type="image/png" href="C:\FluxUI\back\web\flux-fav.png">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,6 +18,12 @@
         h1 {
             text-align: center;
             margin-bottom: 20px;
+        }
+
+        img {
+            width: auto; /* Adjust width as needed */
+            max-width: 5%; /* Optional, set max width for responsive display */
+            display: block; /* Ensures image takes up full available width */
         }
 
         form {
@@ -37,6 +44,7 @@
             border: 1px solid #ccc;
             box-sizing: border-box; /* Include padding and border in width/height */
             margin-bottom: 10px;
+            font-size: 24px;
             background-color: #131313;
             color: #ffffff;
         }
@@ -47,6 +55,21 @@
             padding: 10px 20px;
             border: none;
             cursor: pointer;
+        }
+
+        .button2 {
+            padding: 15px 30px;
+            font-size: 28px;
+            background-color: #0372D5;
+            text-align: center;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.5s ease; /* Add a smooth transition */
+        }
+        .button2:hover {
+            background-color: #A8D503; /* Change color on hover */
+            color: black;
         }
 
         /* Chat Message Styling */
@@ -75,14 +98,18 @@
             border-radius: 5px;
         }
 
+        .inline {
+            display: inline;
+            vertical-align: middle; 
+}
 
     </style>
 </head>
 <body>
-    <h1>FluxUI</h1>
+<h1 class="inline"><img src="C:\FluxUI\back\web\flux.png" alt="FluxUI" class="inline"> FluxUI</h1>
     <form onsubmit="event.preventDefault(); copyToClipboard();">
         <textarea id="text-area" placeholder="Type your text here..."></textarea><br><br>
-        <button type="submit">Send</button>
+        <button class="button2" type="submit">Send</button>
     </form>
 
     <div class="chat-container">
