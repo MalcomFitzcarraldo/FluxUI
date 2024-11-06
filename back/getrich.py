@@ -30,11 +30,15 @@ soup = BeautifulSoup(html_content, 'html.parser')
 
 # Create a new HTML document
 html_doc = BeautifulSoup("<html><head></head><body></body></html>", 'html.parser')
-html_doc.head.append(html_doc.new_tag('title', string='FluxUI'))
+html_doc.head.append(html_doc.new_tag('FluxUI', string='FluxUI'))
 
 # Add meta tag for page refresh
 meta = html_doc.new_tag('meta', **{'http-equiv': 'refresh', 'content': '2'})
 html_doc.head.append(meta)
+
+# Add favicon 
+favicon = html_doc.new_tag('link', rel='icon', href='file:///C:/FluxUI/back/web/flux-fav-work.png', type='image/png')
+html_doc.head.append(favicon)
 
 style = html_doc.new_tag('style')
 style.string = '''
@@ -92,4 +96,3 @@ print(Fore.GREEN + "")
 for i in range(3):
     random_color = get_random_color()
     print(random_color + f"Cached at {output_file_path}")
-
