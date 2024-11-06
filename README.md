@@ -85,4 +85,8 @@ or Navigate to **C:\FluxUI** and open **FluxUI.py**
 ### Running Ollama from another PC
 Open ``C:\FluxUI\back\API_ollama`` line 18: Replace ``localhost`` with the IP of the PC running Ollama
 
+![image](https://github.com/user-attachments/assets/71b49752-39aa-4364-ac59-0028b98bbbbf)
+
+![image](https://github.com/user-attachments/assets/8c12a084-59f5-434e-9d7f-af10b636a016)
+
 ![fluxmini](https://github.com/user-attachments/assets/3a4d2b2e-051c-47d2-9b4e-8dff9e526c1e)
