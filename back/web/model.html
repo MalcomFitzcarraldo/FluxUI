@@ -37,6 +37,7 @@
             border: 1px solid #ccc;
             box-sizing: border-box; /* Include padding and border in width/height */
             margin-bottom: 10px;
+            font-size: 42px;
         }
 
         button {
@@ -75,7 +76,7 @@
 </head>
 <body>
 
-    <h1>SET PROMPT:</h1>
+    <h1>SET MODEL:</h1>
     <form onsubmit="event.preventDefault(); copyToClipboard();">
         <textarea id="text-area" placeholder="Type or paste your model here..."></textarea><br><br>
         <button type="submit">UPDATE MODEL</button>
@@ -132,3 +133,4 @@ function openFile() {
 
 </body>
 </html>
+
