@@ -55,6 +55,7 @@
             padding: 10px 20px;
             border: none;
             cursor: pointer;
+            font-size: 18px;
         }
 
         .button2 {
@@ -146,13 +147,32 @@
     </script>
 
 <footer>
+<br>
   <div class="footer">
-    V 0.9.1 |
-    <button onclick="window.location.href='https://github.com/MalcomFitzcarraldo/FluxUI/blob/main/README.md';">Check for Updates</button> |
+    <button onclick="window.location.href='C:/FluxUI/back/web/model_manage.html';">Manage Models</button> |
     <button onclick="window.location.href='C:/FluxUI/back/web/model.html';">Change Model</button> |
-    <button onclick="window.location.href='C:/FluxUI/back/web/prompt.html';">Edit Prompt</button> |
+    <button onclick="window.location.href='C:/FluxUI/back/web/prompt.html';">Edit Prompt</button>
+</div>
+<br>
+<div class="footer">
+    
+<button onclick="window.location.href='https://github.com/MalcomFitzcarraldo/FluxUI/blob/main/README.md';">Version: 0.9.1 | Check for Updates</button>
+</div>  
 
-  </div>
+<script>
+function copylist() {
+  const text = "~flux:ollama list";
+  navigator.clipboard.writeText(text)
+    .then(() => {
+      console.log("Text copied to clipboard");
+    })
+    .catch((error) => {
+      console.error("Error copying text to clipboard:", error);
+    });
+}
+</script>
+
+
 </footer>
 
 
