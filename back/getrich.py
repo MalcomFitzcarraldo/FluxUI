@@ -7,7 +7,7 @@ import os
 from colorama import Fore, Back, Style, init
 
 init(autoreset=True)
-colors = [ Fore.BLACK, Fore.RED, Fore.GREEN, Fore.YELLOW, Fore.BLUE, Fore.MAGENTA, Fore.CYAN, Fore.WHITE, Back.BLACK, Back.RED, Back.GREEN, Back.YELLOW, Back.BLUE, Back.MAGENTA, Back.CYAN, Back.WHITE
+colors = [ Fore.GREEN, Fore.YELLOW, Fore.BLUE, Fore.MAGENTA, Fore.CYAN, Fore.WHITE, Back.BLACK, Back.GREEN, Back.BLUE, Back.MAGENTA, Back.CYAN, Back.WHITE
 ]
 def get_random_color():
     return random.choice(colors)
@@ -91,8 +91,8 @@ with open(output_file_path, 'w', encoding='utf-8') as file:
 os.system('cls')
 print(Fore.WHITE + Style.BRIGHT + Back.BLUE + "FluxUI" + Style.RESET_ALL)
 print(Fore.GREEN + "")
-print(Fore.GREEN + "HTML Updated!")
+print(Fore.GREEN + Style.BRIGHT + "Response Updated!")
 print(Fore.GREEN + "")
-for i in range(3):
+for i in range(2):
     random_color = get_random_color()
     print(random_color + f"Cached at {output_file_path}")
