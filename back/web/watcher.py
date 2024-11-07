@@ -61,7 +61,7 @@ def handle_command():
             clipboard_text = pyperclip.paste()
             if clipboard_text.startswith("~flux:"):
                 stripped_text = clipboard_text[7:]
-                with open("C:\\FluxUI\\back\\command.txt", "w", encoding="utf-8") as f:
+                with open("C:\\FluxUI\\back\\web\\command.txt", "w", encoding="utf-8") as f:
                     f.write(stripped_text)
                     pyperclip.copy("FluxUI is a cool tool!")
                 subprocess.Popen(['cmd', '/c', 'start', 'python', 'C:/FluxUI/back/web/command.py'])
@@ -92,4 +92,3 @@ if __name__ == "__main__":
     # Keeping the main thread alive
     while True:
         time.sleep(2)
-
