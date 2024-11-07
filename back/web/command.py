@@ -4,7 +4,8 @@ from colorama import Fore, Style, Back
 print(Fore.WHITE + Style.BRIGHT + Back.BLUE + "FluxUI" + Style.RESET_ALL)
 print(Fore.WHITE + Style.BRIGHT + Back.BLUE + "" + Style.RESET_ALL)
 print(Fore.RED + Back.BLACK + Style.BRIGHT + "Working. This may take a while..." + Style.RESET_ALL)
-
+print(Fore.RED + Back.BLACK + Style.BRIGHT + "Watch the Network Performance tab on task manager to know when a model has downloaded." + Style.RESET_ALL)
+print(Fore.RED + Back.BLACK + Style.BRIGHT + "You can close this window once the network speed drops or when the model is listed in all models" + Style.RESET_ALL)
 # File path to the PowerShell command
 command_file = r"C:\FluxUI\back\web\command.txt"
 
