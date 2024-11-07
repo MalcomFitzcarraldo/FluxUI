@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FluxUI Model Setup</title>
+    <link rel="icon" type="image/png" href="C:\FluxUI\back\web\flux-fav-work.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center horizontally */
+            background-color: #131313;
+            color: #ffffff;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 90%; /* Limit form width */
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #131313;
+            color: #ffffff;
+        }
+
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box; /* Include padding and border in width/height */
+            margin-bottom: 10px;
+            font-size: 42px;
+        }
+
+        button {
+            background-color: #FE9900;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 24px;
+        }
+
+        /* Chat Message Styling */
+        .chat-message {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .user-message {
+            background-color: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            margin-right: 20px; /* Space between messages */
+        }
+
+        .bot-message {
+            background-color: #d9edf7;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    #myFrame {
+      border: none;
+      width: 500px;
+      height: 300px;
+
+    </style>
+</head>
+<body>
+
+    <h1>Install Model:</h1>
+    <form onsubmit="event.preventDefault(); copyToClipboard();">
+        <textarea id="text-area" placeholder="Type or paste the model you want to install here..."></textarea><br><br>
+        <button type="submit">Install</button>
+    </form>
+    <h1>Remove Model:</h1>
+    <form onsubmit="event.preventDefault(); copyToClipboard2();">
+        <textarea id="text-area2" placeholder="Type or paste the model you want to remove here..."></textarea><br><br>
+        <button type="submit">Uninstall</button>
+    </form>
+
+    <div class="chat-container">
+
+        </div>
+
+
+
+ <script>
+        function copyToClipboard() {
+            const textarea = document.getElementById('text-area');
+            const textToCopy = '~flux: ollama run ' + textarea.value;
+            
+            // Create a temporary textarea to copy the text
+            const tempTextarea = document.createElement('textarea');
+            tempTextarea.value = textToCopy;
+            document.body.appendChild(tempTextarea);
+            tempTextarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextarea);
+            alert('Model Updated.');
+            window.location.href = 'C:/FluxUI/back/web/input.html'; // Redirect to output.html
+        }
+    </script>
+
+ <script>
+        function copyToClipboard2() {
+            const textarea2 = document.getElementById('text-area2');
+            const textToCopy = '~flux: Ollama rm ' + textarea2.value;
+            
+            // Create a temporary textarea to copy the text
+            const tempTextarea = document.createElement('textarea');
+            tempTextarea.value = textToCopy;
+            document.body.appendChild(tempTextarea);
+            tempTextarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextarea);
+            alert('Model Updated.');
+            window.location.href = 'C:/FluxUI/back/web/input.html'; // Redirect to output.html
+        }
+    </script>
+
+
+<button onclick="openFile()">View Active Model</button>
+<br>
+<button onclick="copylist()">List All Installed Models</button>
+<iframe id="myFrame" src=""></iframe>
+
+<script>
+function openFile() {
+  const iframe = document.getElementById('myFrame');
+  iframe.src = 'C:\\FluxUI\\back\\model.txt'; // Replace with your file path
+}
+</script>
+
+<script>
+function copylist() {
+  const text = "~flux: ollama list";
+  navigator.clipboard.writeText(text)
+    .then(() => {
+      console.log("Text copied to clipboard");
+    })
+    .catch((error) => {
+      console.error("Error copying text to clipboard:", error);
+    });
+}
+</script>
+
+
+
+<footer>
+</footer>
+
+
+</body>
+</html>
