@@ -42,6 +42,9 @@ pip install markdown
 ```
 pip install ollama
 ```
+```
+pip install pyperclip
+```
 
 4. Download and extract FluxUI, then create the FluxUI directory.
 
