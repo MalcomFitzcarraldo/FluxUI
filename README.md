@@ -45,6 +45,9 @@ pip install ollama
 ```
 pip install pyperclip
 ```
+```
+pip install keyboard
+```
 
 4. Download and extract FluxUI, then create the FluxUI directory.
 
