@@ -1,4 +1,4 @@
-# FluxUI: Stream AI Responses Directly to Your Browser
+# FluxUI: Use ollama in your web browser without a web server.
 ### FluxUI is a Windows application designed to seamlessly bridge the gap between your text prompts and powerful AI models, delivering responses directly to your web browser without relying on external web servers.
 
 ## Key Features:
