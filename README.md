@@ -1,4 +1,4 @@
-# ✨FluxUI: Unleash the Power of AI Directly in Your Browser✨
+# ✨FluxUI: Unleash the Power of AI in Your Browser✨
 ### Tired of clunky web interfaces and server dependencies when working with AI? FluxUI bridges the gap between powerful AI models and your web browser seamlessly. 🤯 All you need is Ollama, Python, and FluxUI to experience AI like never before! 💻
 
 ## Here's what makes FluxUI special:
@@ -10,7 +10,7 @@
  ## FluxUI features:
 
 * Code Block Formatting: Code snippets are formatted into dedicated blocks, enhancing clarity and readability. 💻
-* Real-time Streaming: Witness the magic unfold as AI generates responses instantly within your browser window. 👀
+* Real-time Streaming: Witness the magic unfold as AI generates responses instantly in your browser window. 👀
 * Zero Web Server Dependency: Say goodbye to server headaches! FluxUI handles it all. 🔒
 * Join the FluxUI revolution and take control of your AI experience today! 🚀
   
@@ -89,6 +89,7 @@ Open ``C:\FluxUI\back\API_ollama`` line 18: Replace ``localhost`` with the IP of
 
 ## Screenshots:
 
+Code Formatting:
 ![image](https://github.com/user-attachments/assets/7df50256-1c92-48f5-876d-7834aeeff1bf)
 
 ![image](https://github.com/user-attachments/assets/71b49752-39aa-4364-ac59-0028b98bbbbf)
