@@ -1,21 +1,20 @@
-# FluxUI: Use ollama in your web browser without a web server.
-### FluxUI is a Windows application designed to seamlessly bridge the gap between your text prompts and powerful AI models, delivering responses directly to your web browser without relying on external web servers.
+# ✨FluxUI: Unleash the Power of AI Directly in Your Browser✨
+### Tired of clunky web interfaces and server dependencies when working with AI? FluxUI bridges the gap between powerful AI models and your web browser seamlessly. 🤯 All you need is Ollama, Python, and FluxUI to experience AI like never before! 💻
 
+## Here's what makes FluxUI special:
+
+* Model Freedom: Use any AI model you desire – the choice is yours! 🚀
+* Effortless Installation: Get up and running in minutes with our simple installation process. 💨
+* Visually Stunning Output: Experience AI responses with optimized prompts that utilize a variety of fonts, text sizes, emojis, and colors for ultimate readability. 🤩
+
+ ## FluxUI features:
+
+* Code Block Formatting: Code snippets are formatted into dedicated blocks, enhancing clarity and readability. 💻
+* Real-time Streaming: Witness the magic unfold as AI generates responses instantly within your browser window. 👀
+* Zero Web Server Dependency: Say goodbye to server headaches! FluxUI handles it all. 🔒
+* Join the FluxUI revolution and take control of your AI experience today! 🚀
+  
 ![fluxui](https://github.com/user-attachments/assets/d8d789b6-1780-41a9-ba0a-2490488c9140)
-
-## Key Features:
-
-* Direct Model Integration: Submit text to various AI models (installed on Ollama) directly from your web browser.
-* Real-time Streaming: Experience immediate feedback as the AI generates its response, displayed in real time within your browser window.
-* Rich Text Output: Enjoy clean and well-formatted text responses with proper paragraph breaks and line spacing for easy readability.
-* Code Block Formatting: FluxUI automatically recognizes and formats code snippets into dedicated code blocks, enhancing clarity and readability.
-* **Zero Web Server Dependency**: Eliminate the need to set up or maintain a web server – FluxUI handles all the communication directly between your system and the AI models.
-## Benefits:
-
-* Simplified Workflow: Streamline your interaction with AI models by eliminating the complexities of web server setup and management.
-* Enhanced User Experience: Enjoy a responsive and interactive experience with real-time feedback and clear, formatted output.
-* Increased Efficiency: Focus on your tasks without the overhead of managing separate web interfaces or servers.
-
 
 ![fluxmini](https://github.com/user-attachments/assets/3a4d2b2e-051c-47d2-9b4e-8dff9e526c1e)
 
@@ -90,6 +89,8 @@ Open ``C:\FluxUI\back\API_ollama`` line 18: Replace ``localhost`` with the IP of
 
 ## Screenshots:
 
+![image](https://github.com/user-attachments/assets/7df50256-1c92-48f5-876d-7834aeeff1bf)
+
 ![image](https://github.com/user-attachments/assets/71b49752-39aa-4364-ac59-0028b98bbbbf)
 
 ![image](https://github.com/user-attachments/assets/27fd32bd-1875-4009-be2f-11c7e0162fc7)
@@ -97,5 +98,8 @@ Open ``C:\FluxUI\back\API_ollama`` line 18: Replace ``localhost`` with the IP of
 ![image](https://github.com/user-attachments/assets/5c8613d4-ed54-482a-864c-70f7ded8a69e)
 
 ![image](https://github.com/user-attachments/assets/8c12a084-59f5-434e-9d7f-af10b636a016)
+
+When I modify the prompt to show HTML
+![image](https://github.com/user-attachments/assets/07ed80bd-83ee-413d-abaf-cdc93cb1dc63)
 
 
