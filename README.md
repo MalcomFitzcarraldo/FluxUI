@@ -22,7 +22,8 @@
 
 
 ## Installation
-
+Install Video
+https://youtu.be/7WgEFHB1bvY
 ### Ollama Setup:
 1. Download and install Ollama (WINDOWS). - https://ollama.com/download
    
