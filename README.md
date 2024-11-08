@@ -1,6 +1,8 @@
 # FluxUI: Use ollama in your web browser without a web server.
 ### FluxUI is a Windows application designed to seamlessly bridge the gap between your text prompts and powerful AI models, delivering responses directly to your web browser without relying on external web servers.
 
+![fluxui](https://github.com/user-attachments/assets/d8d789b6-1780-41a9-ba0a-2490488c9140)
+
 ## Key Features:
 
 * Direct Model Integration: Submit text to various AI models (installed on Ollama) directly from your web browser.
@@ -15,7 +17,7 @@
 * Increased Efficiency: Focus on your tasks without the overhead of managing separate web interfaces or servers.
 
 
-![fluxui](https://github.com/user-attachments/assets/d8d789b6-1780-41a9-ba0a-2490488c9140)
+![fluxmini](https://github.com/user-attachments/assets/3a4d2b2e-051c-47d2-9b4e-8dff9e526c1e)
 
 
 
@@ -82,7 +84,6 @@ Open ``C:\FluxUI\back\API_ollama`` line 18: Replace ``localhost`` with the IP of
 ## Screenshots:
 
 ![image](https://github.com/user-attachments/assets/71b49752-39aa-4364-ac59-0028b98bbbbf)
-![fluxmini](https://github.com/user-attachments/assets/3a4d2b2e-051c-47d2-9b4e-8dff9e526c1e)
 
 ![image](https://github.com/user-attachments/assets/27fd32bd-1875-4009-be2f-11c7e0162fc7)
 
