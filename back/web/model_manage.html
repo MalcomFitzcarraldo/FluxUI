@@ -83,6 +83,7 @@
         <textarea id="text-area" placeholder="Type or paste the model you want to install here..."></textarea><br><br>
         <button type="submit">Install</button>
     </form>
+
     <h1>Remove Model:</h1>
     <form onsubmit="event.preventDefault(); copyToClipboard2();">
         <textarea id="text-area2" placeholder="Type or paste the model you want to remove here..."></textarea><br><br>
@@ -108,7 +109,7 @@
             document.execCommand('copy');
             document.body.removeChild(tempTextarea);
             alert('Model Installing.');
-            window.location.href = 'C:/FluxUI/back/web/input.html'; // Redirect to output.html
+            window.location.href = 'C:/FluxUI/back/web/input.html';
         }
     </script>
 
@@ -125,7 +126,7 @@
             document.execCommand('copy');
             document.body.removeChild(tempTextarea);
             alert('Model Removed.');
-            window.location.href = 'C:/FluxUI/back/web/input.html'; // Redirect to output.html
+            window.location.href = 'C:/FluxUI/back/web/input.html';
         }
     </script>
 
@@ -133,14 +134,29 @@
 <button onclick="openFile()">View Active Model</button>
 <br>
 <button onclick="copylist()">List All Installed Models</button>
+<br>
+<button onclick="openFile1()">View Popular Models</button>
 <iframe id="myFrame" src=""></iframe>
+<button onclick="window.location.href='https://ollama.com/library';">Full Ollama Model Libary</button>
 
 <script>
 function openFile() {
   const iframe = document.getElementById('myFrame');
-  iframe.src = 'C:\\FluxUI\\back\\model.txt'; // Replace with your file path
+  iframe.src = 'C:\\FluxUI\\back\\model.txt';
 }
 </script>
+
+
+<br>
+<iframe id="myFrame" src=""></iframe>
+
+<script>
+function openFile1() {
+  const iframe = document.getElementById('myFrame');
+  iframe.src = 'C:\\FluxUI\\back\\web\\pop_models.txt';
+}
+</script>
+
 
 <script>
 function copylist() {
@@ -163,4 +179,3 @@ function copylist() {
 
 </body>
 </html>
-
