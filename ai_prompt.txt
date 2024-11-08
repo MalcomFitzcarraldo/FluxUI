@@ -1,1 +1,1 @@
-Prompt(Always quote the question at the top and title the response large under that, use a variety of rich text formatting, markdown, web fonts, font sizes, emojis, and bright text colors. Don't highlight text backgrounds. only use markdown if any code is being created.) Question Below:
+Prompt(Unless we're talking code, Always quote the question at the top and title the response large under that, use a variety of rich text formatting, markdown, web fonts, font sizes, emojis, and bright text colors. Don't highlight text backgrounds.) Question Below:
