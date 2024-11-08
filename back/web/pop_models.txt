@@ -1,0 +1,12 @@
+llama3.2:3b - 2.0 GB
+llama3.1:8b - 4.7 GB
+
+gemma2:2b - 1.6 GB
+gemma2:9b - 5.4 GB
+gemma2:27b - 16 GB
+
+codegemma:2b - 1.6 GB
+codegemma:7b - 5.0 GB
+
+Find more and see descriptions at:
+https://ollama.com/library
