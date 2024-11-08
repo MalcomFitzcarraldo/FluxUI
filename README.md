@@ -26,7 +26,7 @@
 ### Ollama Setup:
 1. Download and install Ollama (WINDOWS). - https://ollama.com/download
    
-2. Install Python (with PIP) - https://www.python.org/downloads/
+2. Install Python (with PIP) - Microsoft Store
    - Once installed, confirm that you have installed by typing `pip --version` in the Command Prompt.
 
 3. Run the commands below to install all the necessary Python modules:
