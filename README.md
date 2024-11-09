@@ -1,4 +1,4 @@
-# ✨FluxUI: Unleash the Power of AI in Your Browser✨
+# ✨FluxUI: Unleash the Power of Ollama in Your Browser✨
 ### Tired of clunky web interfaces and server dependencies when working with AI? FluxUI bridges the gap between powerful AI models and your web browser seamlessly. 🤯 All you need is Ollama, Python, and FluxUI to experience AI like never before! 💻
 
 ## Here's what makes FluxUI special:
