@@ -27,60 +27,43 @@ https://youtu.be/7WgEFHB1bvY
 1. Download and install Ollama (WINDOWS). - https://ollama.com/download
    
 2. Install Python (with PIP) - Microsoft Store
-   - Once installed, confirm that you have installed by typing `pip --version` in the Command Prompt.
+ * <sup>Confirm that you have pip by typing `pip --version` in the Command Prompt. </sup>
 
-3. Run the commands below to install all the necessary Python modules:
+3. Run the command below to install all the necessary Python modules:
 ```
-pip install BeautifulSoup4
-```
-```
-pip install colorama
-```
-```
-pip install markdown
-```
-```
-pip install ollama
-```
-```
-pip install pyperclip
-```
-```
-pip install keyboard
+pip install BeautifulSoup4 colorama markdown ollama pyperclip keyboard
 ```
 
-4. Download and extract FluxUI, then create the FluxUI directory.
 
-  * right-click in the **extracted folder** containing the 6 files and click "Open in Terminal".
-   
-  * Run the following commands to create the directory and install FluxUI.
-
-* Create directory - C:\FluxUI.
-   ```cmd
-   mkdir "C:\FluxUI"
-   ```
-* Copy the FluxUI files to C:\FluxUI.
-   ```cmd
-   xcopy . "C:\FluxUI\" /E /H /C /I
-   ```
-   
+4. Download and extract the FluxUI files.
 > [!IMPORTANT]
 > Without modification, this must to be installed/run from "C:\FluxUI".
 
- 
-5. Create desktop shortcut (optional)
-  Run the following code in cmd **(as admin)** to create a desktop shortcut: 
-- Windows (Standard)
+5. right-click in the **extracted folder** containing the 6 FluxUI files and click "Open in Terminal".
+   
+* Create directory - C:\FluxUI.
 ```cmd
-cmd /k mklink "C:\Users\%USERNAME%\Desktop\Snap2It.lnk" "C:\FluxUI\FluxUI.py"
+mkdir "C:\FluxUI"
 ```
-- Windows (OneDrive)
+* Copy the FluxUI files to C:\FluxUI.
 ```cmd
-cmd /k mklink "C:\Users\%USERNAME%\OneDrive\Desktop\Snap2It.lnk" "C:\FluxUI\FluxUI.py"
+xcopy . "C:\FluxUI\" /E /H /C /I
 ```
-or Navigate to **C:\FluxUI** and open **FluxUI.py**
+* Open FluxUI.py
+```cmd
+start C:\FluxUI\FluxUI.py
+```
 
-6. Install a model and you're all set!
+6. Go to Manage Models and install the model of your choice.
+
+7. Go to Change Model and update it to the installed model.
+
+### You're all set! 🚀
+Tips:
+* Create a desktop shortcut for FluxUI.py
+* Use the back button in your browser to edit/review submitted queries
+
+
 
 ## Advanced Setup
 
