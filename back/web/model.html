@@ -119,8 +119,10 @@
         });
     </script>
 
-
-<button onclick="openFile()">View Model</button>
+<br>
+<button onclick="copylist()">List All Installed Models</button>
+<br>
+<button onclick="openFile()">View Active Model</button>
 
 <iframe id="myFrame" src=""></iframe>
 
@@ -130,6 +132,20 @@ function openFile() {
   iframe.src = 'C:\\FluxUI\\back\\model.txt'; // Replace with your file path
 }
 </script>
+
+<script>
+function copylist() {
+  const text = "~flux: ollama list";
+  navigator.clipboard.writeText(text)
+    .then(() => {
+      console.log("Text copied to clipboard");
+    })
+    .catch((error) => {
+      console.error("Error copying text to clipboard:", error);
+    });
+}
+</script>
+    
 <footer>
 </footer>
 
