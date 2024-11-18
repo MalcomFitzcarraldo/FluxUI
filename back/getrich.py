@@ -91,7 +91,7 @@ with open(output_file_path, 'w', encoding='utf-8') as file:
 os.system('cls')
 print(Fore.WHITE + Style.BRIGHT + Back.BLUE + "FluxUI" + Style.RESET_ALL)
 print(Fore.GREEN + "")
-print(Fore.GREEN + Style.BRIGHT + "Response Updated!")
+print(Fore.GREEN + Style.BRIGHT + "Responding in browser...")
 print(Fore.GREEN + "")
 for i in range(2):
     random_color = get_random_color()
