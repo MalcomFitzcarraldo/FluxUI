@@ -11,7 +11,8 @@
 
 * Code Block Formatting: Code snippets are formatted into dedicated blocks, enhancing clarity and readability. 💻
 * Real-time Streaming: Witness the magic unfold as AI generates responses instantly in your browser window. 👀
-* Zero Web Server Dependency: Say goodbye to server headaches! FluxUI handles it all. 🔒
+* Zero Web Server Dependency: Say goodbye to server headaches! FluxUI handles it all. 🧮
+* Total Privacy: Once a response is generated the cache is cleared. 🔒
 * Join the FluxUI revolution and take control of your AI experience today! 🚀
   
 ![fluxui](https://github.com/user-attachments/assets/d8d789b6-1780-41a9-ba0a-2490488c9140)
