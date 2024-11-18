@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>FluxUI Model Setup</title>
+    <title>FluxUI Model Settings</title>
     <link rel="icon" type="image/png" href="C:\FluxUI\back\web\flux-fav-work.png">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
             display: flex;
-            flex-direction: column; /* Stack elements vertically */
-            align-items: center; /* Center horizontally */
+            flex-direction: column;
+            align-items: center;
             background-color: #131313;
             color: #ffffff;
         }
@@ -23,7 +23,7 @@
         form {
             display: flex;
             flex-direction: column;
-            width: 90%; /* Limit form width */
+            width: 90%;
             border: 1px solid #ccc;
             padding: 10px;
             margin-bottom: 20px;
@@ -36,7 +36,7 @@
             height: 150px;
             padding: 10px;
             border: 1px solid #ccc;
-            box-sizing: border-box; /* Include padding and border in width/height */
+            box-sizing: border-box;
             margin-bottom: 10px;
             font-size: 42px;
         }
@@ -50,7 +50,7 @@
             font-size: 24px;
         }
 
-        /* Chat Message Styling */
+       
         .chat-message {
             display: flex;
             align-items: center;
@@ -61,7 +61,7 @@
             background-color: #eee;
             padding: 10px;
             border-radius: 5px;
-            margin-right: 20px; /* Space between messages */
+            margin-right: 20px;
         }
 
         .bot-message {
@@ -108,7 +108,7 @@
             tempTextarea.select();
             document.execCommand('copy');
             document.body.removeChild(tempTextarea);
-            alert('Model Installing.');
+            alert('Request Sent.Remember to update your active model after the installation');
             window.location.href = 'C:/FluxUI/back/web/input.html';
         }
     </script>
@@ -125,7 +125,7 @@
             tempTextarea.select();
             document.execCommand('copy');
             document.body.removeChild(tempTextarea);
-            alert('Model Removed.');
+            alert('Request Sent.');
             window.location.href = 'C:/FluxUI/back/web/input.html';
         }
     </script>
