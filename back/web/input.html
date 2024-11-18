@@ -9,8 +9,8 @@
             font-family: Arial, sans-serif;
             margin: 20px;
             display: flex;
-            flex-direction: column; /* Stack elements vertically */
-            align-items: center; /* Center horizontally */
+            flex-direction: column;
+            align-items: center;
             background-color: #131313;
             color: #ffffff;
         }
@@ -21,15 +21,15 @@
         }
 
         img {
-            width: auto; /* Adjust width as needed */
-            max-width: 5%; /* Optional, set max width for responsive display */
-            display: block; /* Ensures image takes up full available width */
+            width: auto;
+            max-width: 5%;
+            display: block;
         }
 
         form {
             display: flex;
             flex-direction: column;
-            width: 90%; /* Limit form width */
+            width: 90%;
             border: 1px solid #ccc;
             padding: 10px;
             margin-bottom: 20px;
@@ -42,7 +42,7 @@
             height: 150px;
             padding: 10px;
             border: 1px solid #ccc;
-            box-sizing: border-box; /* Include padding and border in width/height */
+            box-sizing: border-box;
             margin-bottom: 10px;
             font-size: 24px;
             background-color: #131313;
@@ -66,14 +66,14 @@
             color: white;
             border: none;
             cursor: pointer;
-            transition: background-color 0.5s ease; /* Add a smooth transition */
+            transition: background-color 0.5s ease; /* Smooth transition */
         }
         .button2:hover {
             background-color: #A8D503; /* Change color on hover */
             color: black;
         }
 
-        /* Chat Message Styling */
+  
         .chat-message {
             display: flex;
             align-items: center;
@@ -84,7 +84,7 @@
             background-color: #eee;
             padding: 10px;
             border-radius: 5px;
-            margin-right: 20px; /* Space between messages */
+            margin-right: 20px;
         }
 
         .bot-message {
@@ -123,7 +123,6 @@
             const textarea = document.getElementById('text-area');
             const textToCopy = '@flux: ' + textarea.value;
             
-            // Create a temporary textarea to copy the text
             const tempTextarea = document.createElement('textarea');
             tempTextarea.value = textToCopy;
             document.body.appendChild(tempTextarea);
@@ -131,7 +130,7 @@
             document.execCommand('copy');
             document.body.removeChild(tempTextarea);
 
-            window.location.href = 'C:/FluxUI/temp/output.html'; // Redirect to output.html
+            window.location.href = 'C:/FluxUI/temp/output.html';
         }
 
         // Handle Enter key press in the textarea
@@ -150,13 +149,13 @@
 <br>
   <div class="footer">
     <button onclick="window.location.href='C:/FluxUI/back/web/model_manage.html';">Manage Models</button> |
-    <button onclick="window.location.href='C:/FluxUI/back/web/model.html';">Change Model</button> |
+    <button onclick="window.location.href='C:/FluxUI/back/web/model.html';">Set Model</button> |
     <button onclick="window.location.href='C:/FluxUI/back/web/prompt.html';">Edit Prompt</button>
 </div>
 <br>
 <div class="footer">
     
-<button onclick="window.location.href='https://github.com/MalcomFitzcarraldo/FluxUI/blob/main/README.md';">Version: 0.9.1 | Check for Updates</button>
+<button onclick="window.location.href='https://github.com/MalcomFitzcarraldo/FluxUI/blob/main/README.md';">Version: 1.0.1 | Check for Updates</button>
 </div>  
 
 <script>
