@@ -31,8 +31,6 @@ pip install BeautifulSoup4 colorama markdown ollama pyperclip keyboard
 ```
 
 4. Download and extract the files from the latest release of FluxUI.
-> [!IMPORTANT]
-> Without modification, this must to be installed/run from "C:\FluxUI".
 
 5. right-click in the **extracted folder** containing the 6 FluxUI files and click "Open in Terminal".
    
