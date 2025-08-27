@@ -81,7 +81,8 @@ body = html_doc.body
 body.append(html_doc.new_tag('h1', string='Markdown Content'))
 
 div = html_doc.new_tag('div', attrs={'class': 'content'})
-div.append(soup)
+for element in soup.contents:
+    div.append(element)
 body.append(div)
 
 # Convert to string and write to an HTML file
@@ -96,3 +97,4 @@ print(Fore.GREEN + "")
 for i in range(2):
     random_color = get_random_color()
     print(random_color + f"Cached at {output_file_path}")
+
